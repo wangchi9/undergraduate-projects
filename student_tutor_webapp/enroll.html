@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>LOGIN PAGE</title>
+	<link rel="stylesheet" type="text/css" href="styles/jquery.mobile-1.1.1.min.css" />
+</head>
+
+<body id="loginpg" user="" user_name="" user_email="" courses="">
+<script type="text/javascript" src="js/jquery-1.8.0.min.js"></script>
+<script type="text/javascript" src="js/jquery.mobile-1.1.1.min.js"></script>
+<script type="text/javascript" src="js/user.js"></script>
+
+<div data-role="page" class="page-map" id="LoginPage" data-theme="b">
+<div data-role="header" data-position="fixed">
+    <h1 class="white">Welcome</h1>
+</div>
+<div class="thrColEls" >
+
+<div class="container">
+  <!--Reminder-->
+	<div id="sidebar1"> 
+		<h3>Reminder</h3>
+    	<ul>
+        	<li>Please remember to logout to end your session</li>
+       		<li>    </li>
+      		<li>This system will be unavailable from XX to XX for regular maintenance</li>
+    	</ul>
+	</div>    	
+    	 <!--end Reminder-->
+
+	<div id="sidecol">
+  		<div class="sidebar2"> 
+    	<h3 id="lightbar" >sign ups</h3>
+      <ul>
+    		<li><a href=" " target="_blank">Sign up as a student</a></li>
+    		<li><a href=" " target="_blank">Sign up as a tutor</a></li>
+        </ul>
+ 	</div>
+</div>
+
+	<div id="mainContent">
+		<h3><font color=red><span id='err'></span></font></h3>
+	<div id="login"><h3>Account login</h3>
+	    <form id="succ" method="post" action="enroll.html" name="f">
+		<input type="hidden" name="referer" value="enroll.html">
+            	<span class="nobr">Student# or tutor#:
+              	<input type="text" name="input_id" id="input_name" />
+				</span>  
+              	<span class="nobr">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Password:&nbsp;<input type="password" name="input_id" id="input_pass" /></span>
+              	<a type="button" value="Login" onClick="validate()">Login</a>
+              
+           </form>
+</div></div></div>
+
+<br class="clearfloat" />
+
+<div id="footer" >
+        <div class="blue" >
+        	<p class="bold" >CSCC01F12</p>
+            <p>&copy; GROUP 8</p>
+            <p>Members: Chi Wang, Yiming Jiao, Chaojun Zheng, Doyoung Oh, Shaowei Chang</p>
+        </div>
+  <!-- end #footer --></div>
+
+</div>
+</div>
+
+
+    <!-- setting data-theme at page level is inherited by all sub-pages -->
+    <div data-role="page" class="page-map" id="Courses" data-theme="b">
+
+	<div data-role="header" data-position="fixed" data-id="nav1">
+		<h1>ALL COURSES</h1>
+		<div data-type="horizontal" class="ui-btn-right">
+			<a href="#LoginPage" data-role="button" data-icon="gear" data-theme="b">LOG OUT</a>
+		</div>
+	</div>
+
+	<div data-role="content">
+            <ul id="CoursesList" data-role="listview" data-filter="true" data-filter-placeholder="enter course id(or substring)"></ul>
+	</div>		
+
+	<div data-role="footer" class="footerDiv" data-id="nav1"
+		data-position="fixed">
+		<div data-role="navbar">
+    			<ul>
+                	<li><a href="#Courses">all courses</a></li>
+        			<li><a href="#MyCourses">manage courses</a></li>
+        			<li><a href="#TimeTable">time table</a></li>
+    			</ul>
+  	 	</div>
+	</div> <!-- /footer -->
+    </div>
+
+    <div data-role="page" class="page-map" id="MyCourses" data-theme="b">
+	<div data-role="header" data-position="fixed" data-id="nav1">
+		<h1 id="mycourseheader">MY COURSES</h1>
+		<div data-type="horizontal" class="ui-btn-right">
+			<a href="#LoginPage" data-role="button" data-icon="gear" data-theme="b">LOG OUT</a>
+		</div>
+	</div>
+
+	<div data-role="content">
+            <ul id="MyCourseList" data-role="listview"></ul>
+        </div>		
+
+	<div data-role="footer" class="footerDiv" data-id="nav1" data-position="fixed">
+		<div data-role="navbar">
+    			<ul>
+                		<li><a href="#Courses">all courses</a></li>
+        			<li><a href="#MyCourses">manage courses</a></li>
+        			<li><a href="#TimeTable">time table</a></li>
+    			</ul>
+  	 	</div>
+	</div> <!-- /footer -->
+    </div>
+
+    <div data-role="page" class="page-map" id="TimeTable" data-add-back-btn="false" data-theme="b">
+	<div data-role="header" data-position="fixed" data-id="nav1">
+		<h1>TIME TABLE</h1>
+		<div data-type="horizontal" class="ui-btn-right">
+			<a href="#LoginPage" data-role="button" data-icon="gear" data-theme="b">LOG OUT</a>
+		</div>
+	</div>
+
+	<div data-role="content">
+           <table border="1" >
+<tr>
+  <td height="50"></td>
+  <td  width="200">MO</td>
+  <td  width="200">TU</td>
+  <td  width="200">WE</td>
+  <td  width="200">TH</td>
+  <td  width="200">FR</td>
+</tr>
+<tr>
+  <td height="100" width="100">8:00-10:00</td>
+  <td id="MO 8:00-10:00"></td>
+  <td id="TU 8:00-10:00"></td>
+  <td id="WE 8:00-10:00"></td>
+  <td id="TH 8:00-10:00"></td>
+  <td id="FR 8:00-10:00"></td>
+</tr>
+<tr id>
+  <td height="100">10:00-12:00</td>
+  <td id="MO 10:00-12:00"></td>
+  <td id="TU 10:00-12:00"></td>
+  <td id="WE 10:00-12:00"></td>
+  <td id="TH 10:00-12:00"></td>
+  <td id="FR 10:00-12:00"></td>
+</tr>
+<tr>
+  <td height="100">12:00-14:00</td>
+  <td id="MO 12:00-14:00"></td>
+  <td id="TU 12:00-14:00"></td>
+  <td id="WE 12:00-14:00"></td>
+  <td id="TH 12:00-14:00"></td>
+  <td id="FR 12:00-14:00"></td>
+</tr>
+<tr>
+  <td height="100">14:00-16:00</td>
+  <td id="MO 14:00-16:00"></td>
+  <td id="TU 14:00-16:00"></td>
+  <td id="WE 14:00-16:00"></td>
+  <td id="TH 14:00-16:00"></td>
+  <td id="FR 14:00-16:00"></td>
+</tr>
+<tr>
+  <td height="100">16:00-18:00</td>
+  <td id="MO 16:00-18:00"></td>
+  <td id="TU 16:00-18:00"></td>
+  <td id="WE 16:00-18:00"></td>
+  <td id="TH 16:00-18:00"></td>
+  <td id="FR 16:00-18:00"></td>
+</tr>
+
+</table>        </div>	
+
+	<div data-role="footer" class="footerDiv" data-id="nav1"
+		data-position="fixed">
+		<div data-role="navbar">
+    			<ul>
+                	<li><a href="#Courses">all courses</a></li>
+        			<li><a href="#MyCourses">manage courses</a></li>
+        			<li><a href="#TimeTable">time table</a></li>
+    			</ul>
+  	 	</div>
+	</div> <!-- /footer -->
+    </div>
+
+    <div data-role="page" class="page-map" id="Course" data-add-back-btn="true" data-theme="b">
+
+	<div data-role="header" data-position="fixed" data-id="nav1">
+		<h1>COURSE INFO</h1>
+		<div data-type="horizontal" class="ui-btn-right">
+			<a id="enroll" href="#Course" class="btn enrolling" courseid="" data-role="button" data-icon="star" data-theme="b">ENROLL</a>
+			<a href="#LoginPage" data-role="button" data-icon="gear" data-theme="b">LOG OUT</a>
+		</div>
+	</div>
+
+	<div data-role="content">
+		<h3><font color=red><span id='enrollerr'></span></font></h3>
+            <ul id="CourseInfoList" data-role="listview"></ul>
+       </div>	
+
+	<div data-role="footer" class="footerDiv" data-id="nav1" data-position="fixed">
+		<div data-role="navbar">
+    			<ul>
+                		<li><a href="#Courses">all courses</a></li>
+        			<li><a href="#MyCourses">manage courses</a></li>
+        			<li><a href="#TimeTable">time table</a></li>
+    			</ul>
+  	 	</div>
+	</div> <!-- /footer -->
+    </div>
+
+</body>
+</html>

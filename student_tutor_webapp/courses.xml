@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+<courses>
+	<course>
+		<id>CSCA08H3</id>
+		<name>Introduction to Computer Programming</name>
+		<info>Structure of computers; the computing environment. Programming in an object-oriented language such as Python. Program structure: elementary data types, statements, control flow, functions, classes, objects, methods, fields. Lists; searching, sorting and complexity.</info>
+		<time>MO 12:00-14:00</time>
+	</course>
+	<course>
+		<id>CSCA48H3</id>
+		<name>Introduction to Computer Science</name>
+		<info>Abstract data types and data structures for implementing them. Linked data structures. Encapsulation and information-hiding. Object-oriented programming. Specifications. Analyzing the efficiency of programs. Recursion.</info>
+		<time>MO 14:00-16:00</time>
+	</course>
+	<course>
+		<id>CSCA67H3</id>
+		<name>Discrete Mathematics for Computer Scientists</name>
+		<info>Introduction to discrete mathematics: Elementary combinatorics; discrete probability including conditional probability and independence; graph theory including trees, planar graphs, searches and traversals, colouring. The course emphasizes topics of relevance to computer science, and exercises problem-solving skills and proof techniques such as well ordering, induction, contradiction, and counterexample.</info>
+		<time>TU 12:00-14:00</time>
+	</course>
+	<course>
+		<id>CSCB07H3</id>
+		<name>Software Design</name>
+		<info>An introduction to software design and development concepts, methods, and tools, using a statically-typed object-oriented language such as Java. Topics from: version control, build management, unit testing, refactoring, design patterns, advanced IDE usage, regular expressions, markup languages, parsing using finite state machines, and reflection.</info>
+		<time>FR 12:00-14:00</time>
+	</course>
+	<course>
+		<id>CSCB09H3</id>
+		<name>Software Tools and Systems Programming</name>
+		<info>Software techniques in a Unix-style environment, using scripting languages and a machine-oriented programming language (typically C). What goes on in the system when programs are executed. Core topics: creating and using software tools, pipes and filters, file processing, shell programming, processes, system calls, signals, basic network programming.</info>
+		<time>TH 14:00-16:00</time>
+	</course>
+</courses>

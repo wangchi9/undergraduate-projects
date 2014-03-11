@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+    <servlet>
+        <servlet-name>Controller</servlet-name>
+        <servlet-class>Controller</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Login</servlet-name>
+        <servlet-class>Login</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>SaveStop</servlet-name>
+        <servlet-class>SaveStop</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>DeleteStop</servlet-name>
+        <servlet-class>DeleteStop</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>MystopsList</servlet-name>
+        <servlet-class>MystopsList</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Register</servlet-name>
+        <servlet-class>Register</servlet-class>
+    </servlet>
+    <context-param>
+        <param-name>dbInit</param-name>
+        <!--<param-value>true</param-value>-->
+        <param-value>false</param-value>
+    </context-param>
+    <context-param>
+        <description>set login session idle-timeout interval, expressed in seconds</description>
+        <param-name>idleTimeout</param-name>
+        <param-value>300</param-value>
+    </context-param>
+<!--
+    <servlet>
+        <servlet-name>Register</servlet-name>
+        <servlet-class>Register</servlet-class>
+    </servlet>
+-->
+    <servlet-mapping>
+        <servlet-name>Controller</servlet-name>
+        <url-pattern>/Controller</url-pattern>
+    </servlet-mapping>
+<!--
+    <welcome-file-list>
+        <welcome-file>iTrans.html</welcome-file>
+    </welcome-file-list>
+-->
+    <!-- start H2 DB from the App itself -->
+<!--
+    <listener>
+        <listener-class>org.h2.server.web.DbStarter</listener-class>
+    </listener>
+-->
+</web-app>

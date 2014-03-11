@@ -1,0 +1,21 @@
+name: Chi Wang
+utorid: wangchi9
+student#: 998457931
+
+name: Yiming Jiao
+utorid: jiaoyimi
+student#: 998379446
+
+
+by assignment 2:
+this assignment is like the most complicated assignment we've ever had. first, we learned about how to write php files, it's not that easy for us to write php and this is just step one. then learned about the tomcat6 servlet and mySQL, we spent a day to learn how to using our own port... 
+because we knew nothing about coding or using a servlet before, there were so many directories and files, so at first, we were very confused about how they related to each other, it took us a whole week to understand the relationship between each files and how they work. 
+after we correctly set up the servlet, we began to learn professor's java files and the new javascript file, there were a lot of new informations there. fortunately, we can use the code which provided by prof, or we can never write those files by ourselves...during the whole programming period, we encountered like millions of problems and bugs, like cannot build tables in our database, cannot log in, cannot save stops. the only method we didn't finish is save stop. we stuck at savestop for some days, the problem is when we click the save stop button, it will save the data, changepage to MyStopsPage and then turn to an undefined page immediately, and we don't know what is that undefined page and why. when we click "go back" to mystopspage, it works fine.
+the thing we are proud of is, we implement almost all the functions, including login, register, view stops, predict etc. for register function, we didn't use that register jsp. we wrote that java file and add a userbean by ourselves and it works. we were happy about that. 
+
+for assignment 3:
+We completely finished step one (Concurrency and Security); 
+however, the initial part -- nearme.php of step two we have no idea on how to calculate the distances. Thus we used the sqrt of the sum of the square of the differences between the two geolocations of both lat and lon. But it does not return correct values. So we used stopsnearme.php from the prof's folder.
+Ploting nearme stops and mapping Route-Stops and Route Vehicle-Positions took us a lot of time to understand how google map works and to do code-review from tut cdlist map examples.
+We used checkbox for Mapping Route-Stops and Route Vehicle-Positions.
+Step three was also done by simply doing the code-review of info page from tut cdlist example.

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.WordZ"
+    android:versionCode="1"
+    android:versionName="1.0" >
+    <supports-screens android:anyDensity="false" android:largeScreens="false" android:normalScreens="true" android:smallScreens="false" android:screenOrientation="portrait"/>
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="17" />
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.WordZ4.MainActivity"
+            android:label="@string/app_name" 
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+      <activity android:name="org.achartengine.GraphicalActivity" />
+ 
+          <activity android:name="com.WordZ4.PieChart"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+        </activity>
+        
+                <activity android:name="com.WordZ4.LineChart"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+        </activity>
+        
+                      <activity android:name="com.WordZ4.ShowStatusGraph"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+        </activity>
+        
+        
+        <activity android:name="com.WordZ4.DisplayWords"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+        </activity>
+        
+        <activity android:name="com.WordZ4.ShowDef"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+        </activity>
+        
+        <activity android:name="com.WordZ4.ViewFile"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+        </activity>
+        
+        <activity android:name="com.WordZ4.ViewWords"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+        </activity>
+        
+        <activity android:name="com.WordZ4.LoadFile"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+        </activity>
+        
+         <activity android:name="com.WordZ4.LoadLog"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+        </activity>
+        
+            <activity android:name="com.WordZ4.Info"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+        </activity>
+        
+    </application>
+
+</manifest>

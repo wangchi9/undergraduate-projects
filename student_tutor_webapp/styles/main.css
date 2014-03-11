@@ -1,0 +1,376 @@
+/* Normalizes margin, padding */
+html, body, div, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, p, blockquote, th
+{ 	margin : 0; 
+	padding : 0; 
+	font-size: 100%; 
+	font-family:Verdana, Arial, Helvetica, sans-serif; 
+	color:#000;
+ }
+
+/* Normalizes font-size for headers */
+h1,h2,h3,h4,h5,h6 { font-size : 125%; }
+
+
+/* Removes list-style from lists */
+ul { list-style : none; }
+
+.profile{
+list-style : disc;
+padding:.6em 3em .6em 4em
+}
+
+/* Normalizes font-style and font-weight to normal */
+address, caption, cite, code, dfn, em, th, var
+{ font-style : normal; font-weight : normal; }
+
+/* Removes list-style from lists */
+/*table { border-collapse : collapse; border-spacing : 0; }*/
+
+/* Removes border from fieldset and img */
+fieldset,img { border : 0; }
+
+/* Left-aligns text in caption and th */
+caption,th { text-align : left;}
+
+/* Removes quotation marks from q */
+q:before, q:after { content :''; }
+
+
+
+.blue { color: #00204e;}
+.white, .white a { color:white;}
+.bold {font-weight:bold;}
+.clearfloat { /* this class should be placed on a div or break element and should be the final element before the close of a container that should fully contain a float */
+	clear:both; }
+.smallfont { font-size:90%;}
+.nobr {
+  white-space: nowrap;
+  display:block;
+  padding-bottom:.4em;
+  
+ }
+.blue_border { border:1px solid #00204e; }
+
+body  {
+	font: 67.5% Verdana, Arial, Helvetica, sans-serif;
+	background-color:#fff;
+	text-align: center; /* this centers the container in IE 5* browsers. The text is then set to the left aligned default in the #container selector */
+}
+
+.left { text-align:left;}
+.pointfive li {margin-bottom:.5em;}
+
+.margbottom {margin-bottom:1em; display:inline-block;}
+
+/* 
+
+
+======================== LOGIN PAGE STYLE ==============================
+
+
+*/
+
+#loginpg h1 { font-size:150%; padding:.6em 0 .6em 0; border-top: 2px solid #00204e; border-bottom:2px solid #00204e;}
+#footer a, #login a { color:#673802;}
+.regpage a:hover, #loginpg a:hover { text-decoration:none;}
+
+#loginpg .top, .regpage .top {  width:100%;  border-top:2px solid #00204e;}
+
+#loginpg .top {height:183px; background:url(../images/topbg_login.jpg) #fff no-repeat top center;}
+.regpage .top {height:130px; background:url(../images/topbg_regular3.jpg) #fff no-repeat top right;}
+
+
+/*======================== MAIN NAVIGATION ================================*/
+
+#mainnav { background:url(../images/listbg2.jpg) no-repeat top right;}
+#mainnav2, #mainnav {float:left; width:100%;  /*border-top: 2px solid #00204e; border-bottom:1px solid #00204e; */ padding:.2em 0 0em 0em;}
+#mainnav, #mainnav2 {/*background:#00204e url(../images/dark_gradient2.gif) top; background:#9db3c9;*/ border-bottom:2px solid #00204e;}
+#mainnav2 { background:#fff url(../images/yellow_gradient.gif) repeat-x center; margin-bottom:1em; }
+
+#mainnav li, #mainnav2 li {float:left; }
+#mainnav li { /*background:url(../images/dark_gradient2.gif) no-repeat left center;*/ background:url(../images/tab_right.gif) no-repeat top right; margin-right:1px; margin-left:1px; margin-top:.4em; }
+
+#mainnav li a, #mainnav2 li a { display:block; padding:0 2em; line-height:2em; text-decoration:none; }
+#mainnav li a {color:#fff; /*background:url(../images/light_gradient.gif) no-repeat left center;*/ background:url(../images/tab_left.gif) no-repeat top left;}
+#mainnav2 li a { color:#673802; /*background:url(../images/dark_gradient2.gif) no-repeat left center; border-left:1px solid #673802;*/ }
+.first a, .first { background:none; border-left:0;}
+
+#mainnav li:visited a, #mainnav2 li:visited a{ text-decoration:none;}
+#mainnav li:hover a, #mainnav2 li:hover a{ text-decoration:underline; color:#fff; border-left:0; }
+#mainnav2 li:hover a{ text-decoration:none; color:#673802;}
+#mainnav li:hover a{/*background:url(../images/yellow_gradient.gif) repeat-x top;*/background:url(../images/tab_left_over.gif) no-repeat top left;}
+#mainnav li:hover {background:url(../images/tab_right_over.gif) no-repeat top right;}
+/*#mainnav2 li a:hover  {background:url(../images/dark_gradient2.gif) repeat-x center; color:#fff;}*/
+#mainnav2 li:hover { /*border-top:1px solid #673802; */ text-decoration:underline; background:#fff;}
+
+.active {  font-weight:bold; font-style:italic; text-decoration:none;}
+#mainnav .active {color:#FFC582;}
+#mainnav2 li:active a{ text-decoration:none; color:#00204e; background:#fff url(../images/yellow_gradient.gif) repeat-x center; }
+
+
+
+
+
+
+/*
+
+
+======================== BOTTOM NAVIGATION ================================
+
+
+*/
+
+#bottomnav {font-size:90%; margin:0 ; width:800px; position: relative; text-align:center; overflow: hidden;}
+#bottomnav ul{ padding-bottom:5em;}
+#bottomnav ul li{ float:left; background:url(../images/dark_gradient2.gif) top left no-repeat;}
+#bottomnav ul li.first { background:none;}
+#bottomnav ul li a {display:block; padding:0 2em; line-height:2em; text-decoration:underline; color:#00204E;}
+#bottomnav ul li:hover a{ text-decoration:none;}
+
+
+/*
+
+
+======================== BRANDING ================================
+
+
+*/
+
+.top #branding { position:absolute; left:30px; width:179px; height:106px; background:url(../images/logo_intranet.gif) bottom center no-repeat;}
+#loginpg .top #branding {top:30px; }
+.regpage #branding {top:10px; }
+
+#branding2 { margin:0 auto; width:100%; height:80px; background:url(http://www.utsc.utoronto.ca/images/images/utsc_logo08.gif) top center no-repeat;}
+#loginmsg { background:none; border:none; padding:1em; color:#482701;}
+
+
+
+
+/*
+
+
+======================== LOGIN PAGE 3 COLUMN LAYOUT ================================
+
+
+*/
+
+.thrColEls { background-color:#fff; padding-top:1.5em; overflow:hidden; }
+
+.thrColEls .container, .maincontent { 
+	width: 800px;  /* this width will create a container that will fit in an 800px browser window if text is left at browser default font sizes */
+	background: none;
+	 /* the auto margins (in conjunction with a width) center the page */
+	border: 0px solid black;
+	/* this overrides the text-align: center on the body element. */
+} 
+.regpage  {margin: 0; text-align:left;}
+#loginpg .thrColEls .container {margin: 0 auto;}
+.regpage .thrColEls .container {margin: 0;}
+
+.maincontent { padding-left:1em;}
+
+
+* html .thrColEls .container { width:800px; } /*IE hack*/
+
+.thrColEls #sidebar1, 
+.thrColEls #sidecol {
+	width: 200px;
+	padding:0;
+	text-align: left; 
+}
+
+.thrColEls #sidebar1 {
+	float: left; 
+	background: #c7f3ea; /* yellow box */
+	border:#673802 1px solid;
+}
+
+.thrColEls #sidecol {
+	float: right;
+}
+
+.thrColEls .sidebar2, 
+.thrColEls #login { 
+	background-color:#f9f5e3; /* blue box */
+	border:#00204E 1px solid;
+	margin-bottom:10px;
+}
+
+.thrColEls .sidebar2 { width: 200px; }
+
+.thrColEls #sidebar1 p, .thrColEls .sidebar2 p {
+	margin-left: 10px; /* the left and right margin should be given to every element that will be placed in the side columns */
+	margin-right: 10px;
+}
+
+.thrColEls #sidebar1 h3,
+.thrColEls .sidebar2 h3,
+.thrColEls #login h3 { 	padding: 5px 0 8px 0;
+							background-position:top;
+							background-repeat:repeat-x;
+							margin-bottom:15px;
+							text-align:center;
+							color:white;
+						}
+						
+.thrColEls #sidebar1 h3 {	background-image:url(../images/orange_gradient2.gif); border-bottom:1px solid #673802; }
+.thrColEls .sidebar2 h3,
+.thrColEls #login h3, h1 {	background:url(../images/dark_gradient2.gif) center; }					
+						
+p { margin-bottom:10px;}
+
+#sidebar1 ul,
+.sidebar2 ul { margin: 0 10px 0 10px; padding-bottom:5px;}
+
+#sidebar1 ul li{ background-image:url(../images/orange_arrow.gif);}
+.sidebar2 ul li{ background-image:url(../images/dark_arrow.gif);}
+#lightbar { background-image:url(../images/light_gradient.gif) ; 
+			color: #00204E;
+			border-bottom: 1px solid #00204E; }
+
+#sidebar1 ul li,
+.sidebar2 ul li{ 
+				 background-repeat:no-repeat;
+				 background-position:0px 7px;
+				 padding: 5px 10px 5px 15px;
+			}
+			
+.sidebar2 ul li a {text-decoration:underline; color:#00204E;}
+.sidebar2 ul li a:hover { color:#000; text-decoration:none;}
+
+.thrColEls #mainContent {
+  margin: 0 200px 0 200px;
+  padding: 0 20px 0 20px; /* the right margin can be given in ems or pixels. It creates the space down the right side of the page. */
+  text-align:center;/*left;*/
+} 
+
+/* Miscellaneous classes for reuse */
+.fltrt { /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in your page */
+	float: left;
+	margin-right: 8px;
+	}
+
+#login { text-align:center;
+		 padding-bottom:.5em; }	
+ 
+ #input { display:block; padding:.5em; margin-bottom:1em; }
+ #height { height:1.6em;}
+ 
+ 
+ 
+/*
+
+
+======================== FOOTER ================================
+
+
+*/ 
+ 
+#footer {
+	width: 100%;
+	text-align: left;
+	/* this padding matches the left alignment of the elements in the divs that appear above it. */
+	background: #fff url(../images/light_gradient.gif) repeat-x top;
+	margin-top: 2em;
+	padding: 1em 0;
+	border-top: 2px solid #00204e;
+	padding-left: 1em;
+}
+
+
+/*
+
+
+=============================== Crisis and non crisis messages =================================
+
+
+*/
+
+/**********Intranet********/
+.marketing {font-family: "Gill Sans", Verdana, Arial, sans-serif;
+			padding:1em;
+			margin-bottom:10px;
+			text-align:center;
+			}
+.marketing h3 { text-transform:uppercase; padding-bottom:.5em; font-weight:bold;}
+.marketing h4 { padding-bottom:.5em;}
+.marketing p { margin:0; padding:0; font-size:1.2em; text-align:left;}
+
+#crisis {border:1px solid #c03; background:#FFECF2}
+#crisis h3 {color:#c03; }
+
+#noncrisis { border:1px solid #002a5c; background:#e6ecf3;}
+#noncrisis h3 {color:#002a5c; }
+
+#footer .container p {
+	font-size: 11px;
+	color: #00204e;
+	text-align: left;
+}
+
+#footer .container a {
+	color: #673802;
+}
+
+.regpage .container {
+	padding-left: 1em;
+}
+
+#importantUpdates{
+	margin:-0.5em 0 0.5em 1em;
+	padding:0.5em;
+	width:72%;
+	height:auto;
+	float:left;	
+	border:1px solid #002a5c;	
+}
+html>body #importantUpdates{
+	margin-top:1em;/*FF*/
+	width:90%;
+	
+}
+/*
+#crisisMsg{
+	margin:-0.5em 0 0.5em 1em;
+	padding:0.5em;	
+	width:72%;
+	height:auto;
+	float:left;
+	border:1px solid #c03;	
+}
+html>body #crisisMsg{
+	margin-top:1em;/*FF
+	width:90%;	
+}*/
+
+/*=============================== MY INFO TABLE ==================================== */
+
+.aligntop { vertical-align:top;}
+.myinfo {  border:1px solid #00204E; width:100%; margin-bottom:1em;}
+.borderbottom { border-bottom:2px solid #fff;}
+.subtable table tr td{ border-top: #9db3c9 solid 1px;}
+.myinfo thead tr th { padding:.5em;}
+.myinfo tr td {padding:.25em 1em .25em 1em;}
+.myinfo thead tr th { background:#f3eac7; color:#000;}
+.myinfo h5 { color:#000;}
+.myinfo tr td {}
+.tableblue { background-color:#e6ecf3; color:#00204E; font-weight:800;}
+.tableblue .alt { background-color:#fff;}
+.tableblue table tr td {color:#00204E;}
+.subtable {border-right:1px solid #9db3c9;}
+.noborder { border:none;}
+.myinfo tbody tr .subtable { padding:0;}
+.subtable table { width:100%;}
+.subtable thead tr th { background-color:#00204e; background-image:none;}
+.subtable thead tr th h5 { color:#fff;}
+.myinfo a { color:#00204e;}
+.width50 {width:50%; }
+.myinfo small { font-style:italic; }
+.maincontent { margin:0 auto;}
+.button { border:1px solid #000; background:#f3eac7; padding:.25em; text-decoration:none; color:#000; margin-right:.5em;}
+.button:hover { background:#673802; color:#fff;}
+

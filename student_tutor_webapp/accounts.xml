@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+<users>
+	<student>
+		<id>001</id>
+		<password>123</password>
+		<name>student Jack</name>
+		<email>studenta@gmail.com</email>
+		<courses>CSCA08H3</courses>
+	</student>
+	<tutor>
+		<id>t001</id>
+		<password>321</password>
+		<name>tutor Ethan</name>
+		<email>tutora@gmail.com</email>
+		<courses>CSCB07H3 CSCA08H3</courses>
+	</tutor>
+</users>
